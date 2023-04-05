@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "7cc4285b239080ef95e6ceabcc931591f21461473882b2bbbf040498ed70b98e"
+build_start_time: [1680710794, 169091000]
+build_end_time: [1680710795, 802976000]
+inputs:
+  "/Users/sittlynnaung/Documents/lynn_projects/hero_to_zero/macos/Flutter/GeneratedPluginRegistrant.swift": [1680710789, 30714896]
+  "/Users/sittlynnaung/Documents/lynn_projects/hero_to_zero/macos/Runner/AppDelegate.swift": [1675285518, 0]
+  "/Users/sittlynnaung/Documents/lynn_projects/hero_to_zero/macos/Runner/MainFlutterWindow.swift": [1675285518, 0]
