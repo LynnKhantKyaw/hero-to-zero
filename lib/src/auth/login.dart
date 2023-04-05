@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -13,8 +12,8 @@ class Login extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: const [
+            const Row(
+              children: [
                 FlutterLogo(
                   size: 30,
                 ),
@@ -26,8 +25,8 @@ class Login extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 30),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Expanded(
                   child: Text(
                     'Create better \ntogether. Whatever.',
@@ -42,23 +41,37 @@ class Login extends StatelessWidget {
               style: TextStyle(fontSize: 12, color: Colors.grey[400]),
             ),
             Expanded(
-              child: Stack(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Container(
-                    padding: const EdgeInsets.all(10),
-                    width: 60,
-                    height: 60,
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle, color: Colors.amber),
-                    child: const FlutterLogo(),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(10),
-                    width: 60,
-                    height: 60,
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle, color: Colors.white),
-                    child: SvgPicture.asset('assets/svgs/riverpod_logo.svg'),
+                  Stack(
+                    children: [
+                      AnimatedPositioned(
+                        left: 300,
+                        duration: const Duration(milliseconds: 500),
+                        child: Container(
+                          padding: const EdgeInsets.all(10),
+                          width: 60,
+                          height: 60,
+                          decoration: const BoxDecoration(
+                              shape: BoxShape.circle, color: Colors.amber),
+                          child: const FlutterLogo(),
+                        ),
+                      ),
+                      AnimatedPositioned(
+                        duration: const Duration(milliseconds: 500),
+                        child: Container(
+                          padding: const EdgeInsets.all(10),
+                          width: 60,
+                          height: 60,
+                          decoration: const BoxDecoration(
+                              shape: BoxShape.circle, color: Colors.white),
+                          child: Image.asset(
+                            'assets/images/riverpod_logo.png',
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
