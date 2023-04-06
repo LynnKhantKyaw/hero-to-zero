@@ -1,7 +1,30 @@
+import 'dart:async';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
-class Login extends StatelessWidget {
+class Login extends StatefulWidget {
   const Login({super.key});
+
+  @override
+  State<Login> createState() => _LoginState();
+}
+
+class _LoginState extends State<Login> {
+  double _left = 0.0;
+  double _top = 0.0;
+
+  @override
+  void initState() {
+    Timer.periodic(const Duration(seconds: 2), (timer) {
+      setState(() {
+        _left = Random().nextDouble() * 300;
+        _top = Random().nextDouble() * 300;
+      });
+    });
+
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,34 +67,39 @@ class Login extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Stack(
-                    children: [
-                      AnimatedPositioned(
-                        left: 300,
-                        duration: const Duration(milliseconds: 500),
-                        child: Container(
-                          padding: const EdgeInsets.all(10),
-                          width: 60,
-                          height: 60,
-                          decoration: const BoxDecoration(
-                              shape: BoxShape.circle, color: Colors.amber),
-                          child: const FlutterLogo(),
-                        ),
-                      ),
-                      AnimatedPositioned(
-                        duration: const Duration(milliseconds: 500),
-                        child: Container(
-                          padding: const EdgeInsets.all(10),
-                          width: 60,
-                          height: 60,
-                          decoration: const BoxDecoration(
-                              shape: BoxShape.circle, color: Colors.white),
-                          child: Image.asset(
-                            'assets/images/riverpod_logo.png',
+                  Expanded(
+                    child: Stack(
+                      children: [
+                        AnimatedPositioned(
+                          left: _left + _top,
+                          top: _top + _left,
+                          duration: const Duration(seconds: 1),
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            width: 60,
+                            height: 60,
+                            decoration: const BoxDecoration(
+                                shape: BoxShape.circle, color: Colors.white),
+                            child: Image.asset(
+                              'assets/images/riverpod_logo.png',
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                        AnimatedPositioned(
+                          left: _left,
+                          top: _top,
+                          duration: const Duration(seconds: 1),
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            width: 60,
+                            height: 60,
+                            decoration: const BoxDecoration(
+                                shape: BoxShape.circle, color: Colors.amber),
+                            child: const FlutterLogo(),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
