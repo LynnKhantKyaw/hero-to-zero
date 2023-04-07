@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hero_to_zero/Theme/app_theme.dart';
 import 'package:hero_to_zero/home.dart';
-import 'package:hero_to_zero/routes.dart';
+import 'package:hero_to_zero/routes/routes.dart';
 
 class MyApp extends ConsumerWidget {
   const MyApp({

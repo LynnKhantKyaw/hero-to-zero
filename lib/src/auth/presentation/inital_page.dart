@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hero_to_zero/assets_class.dart';
-import 'package:hero_to_zero/shared/raised_button.dart';
+import 'package:hero_to_zero/shared/reusable/custom_raised_button.dart';
 import 'package:hero_to_zero/shared/utils.dart';
 import 'package:hero_to_zero/src/auth/presentation/widget/animate_circle_image.dart';
 
@@ -142,14 +142,14 @@ class _InitalPageState extends State<InitalPage> {
               child: Row(
                 children: [
                   Expanded(
-                    child: RaisedButton(
+                    child: CustomRaisedButton(
                       label: 'Sign Up',
                       onPressed: () {},
                     ).animate().slideX(duration: duration),
                   ),
                   const SizedBox(width: 20),
                   Expanded(
-                    child: RaisedButton(
+                    child: CustomRaisedButton(
                       label: 'Login',
                       onPressed: () {
                         GoRouter.of(context).pushNamed('login');
