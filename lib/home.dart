@@ -25,7 +25,7 @@ class _HomeState extends ConsumerState<Home> {
           ),
         ],
       ),
-      body: Column(),
+      body: const Column(),
     );
   }
 

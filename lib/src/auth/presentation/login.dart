@@ -5,14 +5,14 @@ import 'package:hero_to_zero/shared/reusable/custom_text_button.dart';
 import 'package:hero_to_zero/shared/reusable/custom_text_field.dart';
 import 'package:hero_to_zero/shared/utils.dart';
 
-class Register extends StatefulWidget {
-  const Register({super.key});
+class Login extends StatefulWidget {
+  const Login({super.key});
 
   @override
-  State<Register> createState() => _RegisterState();
+  State<Login> createState() => _LoginState();
 }
 
-class _RegisterState extends State<Register> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,15 +22,14 @@ class _RegisterState extends State<Register> {
           padding: const EdgeInsets.all(15.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Text(
-                'Create an account',
+                'Hello!',
                 style: TextStyle(fontSize: 24),
-              ).animate().slideY(duration: duration),
+              ).animate().slideY(duration: duration, begin: -3),
               const SizedBox(height: 5),
               Text(
-                'Register now and learn more ( Hero to Zero )',
+                'Welcome back you\'ve been missed',
                 style: TextStyle(
                     fontSize: 18, color: Colors.grey.withOpacity(0.6)),
               ).animate().scale(duration: duration),
@@ -41,37 +40,26 @@ class _RegisterState extends State<Register> {
               ),
               k2DividerV,
               CustomTextField(
-                labelText: 'Email',
-                controller: TextEditingController(),
-              ),
-              k2DividerV,
-              CustomTextField(
                 labelText: 'Password',
                 controller: TextEditingController(),
+                suffix: const Icon(Icons.visibility_off),
+                obscureText: true,
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: CustomTextButton(
+                  label: 'Remember password',
+                  color: Colors.grey[600],
+                  fontSize: 12,
+                  onPressed: () {},
+                ),
               ),
               k2DividerV,
-              CustomTextField(
-                labelText: 'Confirm Password',
-                controller: TextEditingController(),
-              ),
-              k3DividerV,
               CustomRaisedButton(
-                // bgcolor: Colors.purple,
                 width: double.infinity,
-                label: 'Create Account',
+                label: 'Login',
                 onPressed: () {},
               ),
-              kDividerV,
-              CustomTextButton(
-                label: 'Sign in',
-                onPressed: () {},
-              ),
-              // CustomTextButton(
-              //   label: 'Sign in',
-              //   onPressed: () {
-              //     Navigator.pop(context);
-              //   },
-              // ),
             ],
           ),
         ),
