@@ -10,11 +10,11 @@
 		</data>
 		<key>Resources/flutter_assets/AssetManifest.bin</key>
 		<data>
-		s8gXSmaEGj+qVhSXRIqw/1jjnNk=
+		5rtNcnuFb98CUrJijwy2rwbLUEM=
 		</data>
 		<key>Resources/flutter_assets/AssetManifest.json</key>
 		<data>
-		iCKeFoL54xe9pACuSyiz8rQxWiM=
+		O0U9n2cg6MKkt3lelr1sFntxa9M=
 		</data>
 		<key>Resources/flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,11 +22,27 @@
 		</data>
 		<key>Resources/flutter_assets/NOTICES.Z</key>
 		<data>
-		vDEitlfWGRxteJ/hIuzZIQi5j6s=
+		nZ1bRGOaATLMVUISkXGPvPb6EKE=
 		</data>
 		<key>Resources/flutter_assets/assets/fonts/RobotoSlab-VariableFont_wght.ttf</key>
 		<data>
 		eeYhOcylbW6GeICcCdDyGOK+tH8=
+		</data>
+		<key>Resources/flutter_assets/assets/images/dart_logo.png</key>
+		<data>
+		RWEcFleu+eGsK7FU54at99BVN+U=
+		</data>
+		<key>Resources/flutter_assets/assets/images/flutter_logo.jpeg</key>
+		<data>
+		mFtcJxDILRLblifurl/gIUVT7Xo=
+		</data>
+		<key>Resources/flutter_assets/assets/images/hive_logo.png</key>
+		<data>
+		PGzN8nAiP0jxVbcQ04GNHtdTxtI=
+		</data>
+		<key>Resources/flutter_assets/assets/images/rive_logo.png</key>
+		<data>
+		9gBBoPH6ZVNc6KNf4d1iwR735Wo=
 		</data>
 		<key>Resources/flutter_assets/assets/images/riverpod_logo.png</key>
 		<data>
@@ -46,7 +62,7 @@
 		</data>
 		<key>Resources/flutter_assets/kernel_blob.bin</key>
 		<data>
-		EahZAL0zdF0pRkDLJisqPkD4fbY=
+		D5fjDKwulG16Rw3krw3tpInz6VA=
 		</data>
 		<key>Resources/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -74,14 +90,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8PvR3CkzftYcQTMO8ehUBvQgZ1ySU3RA0UbJEybgOlQ=
+			BCrOQnjG3JzKQsMzXEy5wrGRF6xNwCYWvWiaje+V1cQ=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J4Ht5O4PGO+niboD9kA1gjux310cU5jMxm8nC2EAcHQ=
+			y4JkmQM1HsFGxd0OysZdUPEV/FospMqJi9NtBdYMTl8=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/FontManifest.json</key>
@@ -95,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zi1QewvUa27PQVKeieQtRKGbqfU1XUmTMwc223FOkMk=
+			nlLDb0KQbOg+YHDoxUJ7t9srdsPQIyvQyv72LK4l8eQ=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/assets/fonts/RobotoSlab-VariableFont_wght.ttf</key>
@@ -103,6 +119,34 @@
 			<key>hash2</key>
 			<data>
 			lZ3y9lMuN2/NKe4uhnwNkGwfJ+/pUQ95e31oJ9b0a/I=
+			</data>
+		</dict>
+		<key>Resources/flutter_assets/assets/images/dart_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OVDA/a5CadL5JoseGKQZs3iM512rSUoJC0+L+CEvHRc=
+			</data>
+		</dict>
+		<key>Resources/flutter_assets/assets/images/flutter_logo.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VHfJiaULYfdURJrUcgXPtxEql2t2kxY4xdqp7iexg7c=
+			</data>
+		</dict>
+		<key>Resources/flutter_assets/assets/images/hive_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4sDi7m9hO6KVb10NWpmlMAZnjBpw57otx7hLc97Qmh4=
+			</data>
+		</dict>
+		<key>Resources/flutter_assets/assets/images/rive_logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7AVQiM/I7RKN25y0g3aAVQ+e7nqWPKhWxFFKWlSuLO4=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/assets/images/riverpod_logo.png</key>
@@ -137,7 +181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mTIQp4L3vkRgSYxUb4f5s3KAt1TYuZ6NlL6y24vo2Wo=
+			pRMNznCcV2AXZPRLSzEBBV8OcSmMljpaZ7zDx+gbs0E=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

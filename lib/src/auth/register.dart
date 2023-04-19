@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:hero_to_zero/db/db_names.dart';
 import 'package:hero_to_zero/shared/reusable/custom_raised_button.dart';
 import 'package:hero_to_zero/shared/reusable/custom_text_button.dart';
 import 'package:hero_to_zero/shared/reusable/custom_text_field.dart';
 import 'package:hero_to_zero/shared/utils.dart';
+import 'package:hero_to_zero/src/auth/model/register_model.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -13,6 +16,13 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
+  var authDb = Hive.box(DBNames.authDb);
+
+  final userNameController = TextEditingController();
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  final confirmPasswordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,41 +47,47 @@ class _RegisterState extends State<Register> {
               k3DividerV,
               CustomTextField(
                 labelText: 'Username',
-                controller: TextEditingController(),
+                controller: userNameController,
               ),
               k2DividerV,
               CustomTextField(
                 labelText: 'Email',
-                controller: TextEditingController(),
+                controller: emailController,
               ),
               k2DividerV,
               CustomTextField(
                 labelText: 'Password',
-                controller: TextEditingController(),
+                controller: passwordController,
               ),
               k2DividerV,
               CustomTextField(
                 labelText: 'Confirm Password',
-                controller: TextEditingController(),
+                controller: confirmPasswordController,
               ),
               k3DividerV,
               CustomRaisedButton(
                 // bgcolor: Colors.purple,
                 width: double.infinity,
                 label: 'Create Account',
-                onPressed: () {},
+                onPressed: () {
+                  authDb.put(
+                    DBKeys.registerKey,
+                    RegisterModel(
+                      username: userNameController.text,
+                      email: emailController.text,
+                      password: passwordController.text,
+                      confirmpassword: confirmPasswordController.text,
+                    ),
+                  );
+                },
               ),
               kDividerV,
               CustomTextButton(
                 label: 'Sign in',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
               ),
-              // CustomTextButton(
-              //   label: 'Sign in',
-              //   onPressed: () {
-              //     Navigator.pop(context);
-              //   },
-              // ),
             ],
           ),
         ),
