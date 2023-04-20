@@ -16,7 +16,7 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
-  var authDb = Hive.box(DBNames.authDb);
+  var authDb = Hive.box('register');
 
   final userNameController = TextEditingController();
   final emailController = TextEditingController();
@@ -69,23 +69,24 @@ class _RegisterState extends State<Register> {
                 // bgcolor: Colors.purple,
                 width: double.infinity,
                 label: 'Create Account',
-                onPressed: () {
-                  authDb.put(
-                    DBKeys.registerKey,
-                    RegisterModel(
-                      username: userNameController.text,
-                      email: emailController.text,
-                      password: passwordController.text,
-                      confirmpassword: confirmPasswordController.text,
-                    ),
+                onPressed: () async {
+                  var data = RegisterModel(
+                    username: userNameController.text,
+                    email: emailController.text,
+                    password: passwordController.text,
+                    confirmpassword: confirmPasswordController.text,
                   );
+                  authDb.put('register', data);
+                  setState(() {});
                 },
               ),
               kDividerV,
               CustomTextButton(
                 label: 'Sign in',
                 onPressed: () {
-                  Navigator.pop(context);
+                  print(
+                      '${authDb.get(DBKeys.registerKey)}         auth db data');
+                  //  Navigator.pop(context);
                 },
               ),
             ],

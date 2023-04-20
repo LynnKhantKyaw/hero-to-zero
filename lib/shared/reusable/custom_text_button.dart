@@ -15,13 +15,13 @@ class CustomTextButton extends StatelessWidget {
 
   final Color? color;
 
-  final void Function()? onPressed;
+  final GestureTapCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(),
-      onPressed: onPressed,
+      onPressed: onPressed!,
       child: Text(
         label,
         style: TextStyle(fontSize: fontSize, color: color),

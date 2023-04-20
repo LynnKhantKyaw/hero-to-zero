@@ -14,7 +14,7 @@ class CustomRaisedButton extends StatelessWidget {
   final double width;
   final double height;
 
-  final void Function()? onPressed;
+  final GestureTapCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
