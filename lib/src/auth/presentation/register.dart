@@ -5,7 +5,7 @@ import 'package:hero_to_zero/shared/reusable/custom_raised_button.dart';
 import 'package:hero_to_zero/shared/reusable/custom_text_button.dart';
 import 'package:hero_to_zero/shared/reusable/custom_text_field.dart';
 import 'package:hero_to_zero/shared/utils.dart';
-import 'package:hero_to_zero/src/auth/model/register_model.dart';
+import 'package:hero_to_zero/src/auth/model/register/register_model.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class Register extends StatefulWidget {
@@ -16,12 +16,22 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
-  var authDb = Hive.box('register');
+  var authDb = Hive.box<RegisterModel>(DBNames.authDb);
 
   final userNameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final confirmPasswordController = TextEditingController();
+
+  @override
+  void initState() {
+    if (!Hive.isBoxOpen(DBNames.authDb)) {
+      Hive.box<RegisterModel>(DBNames.authDb);
+    } else {
+      print('open');
+    }
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +86,8 @@ class _RegisterState extends State<Register> {
                     password: passwordController.text,
                     confirmpassword: confirmPasswordController.text,
                   );
-                  authDb.put('register', data);
+                  authDb.put(DBKeys.registerKey, data);
+                  // authDb.add(data);
                   setState(() {});
                 },
               ),
@@ -84,9 +95,7 @@ class _RegisterState extends State<Register> {
               CustomTextButton(
                 label: 'Sign in',
                 onPressed: () {
-                  print(
-                      '${authDb.get(DBKeys.registerKey)}         auth db data');
-                  //  Navigator.pop(context);
+                  Navigator.pop(context);
                 },
               ),
             ],

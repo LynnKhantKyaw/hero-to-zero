@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 String isDark = 'is_dark';
+String kToken = 'token';
 
 SizedBox kDividerH = const SizedBox(width: 10);
 SizedBox k2DividerH = const SizedBox(width: 20);

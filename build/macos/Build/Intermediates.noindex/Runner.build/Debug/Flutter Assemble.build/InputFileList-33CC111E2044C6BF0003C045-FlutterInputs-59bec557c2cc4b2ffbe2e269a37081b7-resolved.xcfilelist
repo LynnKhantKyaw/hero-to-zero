@@ -1219,7 +1219,7 @@
 /Users/sittlynnaung/Developer/flutter/packages/flutter_tools/lib/src/build_system/targets/common.dart
 /Users/sittlynnaung/Developer/flutter/packages/flutter_tools/lib/src/build_system/targets/icon_tree_shaker.dart
 /Users/sittlynnaung/Developer/flutter/packages/flutter_tools/lib/src/build_system/targets/macos.dart
-/Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/DOES_NOT_EXIST_RERUN_FOR_WILDCARD1020000885
+/Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/DOES_NOT_EXIST_RERUN_FOR_WILDCARD560755221
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/assets/fonts/RobotoSlab-VariableFont_wght.ttf
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/assets/images/.DS_Store
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/assets/images/dart_logo.png
@@ -1240,10 +1240,12 @@
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/shared/reusable/custom_text_button.dart
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/shared/reusable/custom_text_field.dart
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/shared/utils.dart
+/Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/src/auth/model/register/register_adaptor.dart
+/Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/src/auth/model/register/register_model.dart
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/src/auth/model/register_model.dart
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/src/auth/presentation/inital_page.dart
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/src/auth/presentation/login.dart
+/Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/src/auth/presentation/register.dart
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/src/auth/presentation/widget/animate_circle_image.dart
-/Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/src/auth/register.dart
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/lib/src/splash_screen/splash_screen.dart
 /Users/sittlynnaung/Documents/lynn_projects/hero-to-zero/pubspec.yaml
