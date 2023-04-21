@@ -5,6 +5,7 @@ import 'package:hero_to_zero/routes/route_names.dart';
 import 'package:hero_to_zero/src/auth/presentation/login.dart';
 import 'package:hero_to_zero/src/auth/presentation/inital_page.dart';
 import 'package:hero_to_zero/src/auth/presentation/register.dart';
+import 'package:hero_to_zero/src/dashboard/dashboard.dart';
 import 'package:hero_to_zero/src/splash_screen/splash_screen.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
@@ -12,8 +13,8 @@ final navigatorKey = GlobalKey<NavigatorState>();
 final goRouterProvider = Provider<GoRouter>((ref) {
   final token = ref.watch(myTokenProvider);
   return GoRouter(
-    initialLocation:
-        token ? '/${RouteNames.dashboard}' : '/${RouteNames.initalPage}',
+    initialLocation: '/${RouteNames.dashboard}',
+    //   token ? '/${RouteNames.dashboard}' : '/${RouteNames.initalPage}',
     routes: [
       GoRoute(
         path: '/',
@@ -34,6 +35,11 @@ final goRouterProvider = Provider<GoRouter>((ref) {
         path: '/${RouteNames.register}',
         name: RouteNames.register,
         builder: (context, state) => const Register(),
+      ),
+      GoRoute(
+        path: '/${RouteNames.dashboard}',
+        name: RouteNames.dashboard,
+        builder: (context, state) => const Dashboard(),
       ),
     ],
   );

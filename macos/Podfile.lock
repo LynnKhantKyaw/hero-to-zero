@@ -1,5 +1,9 @@
 PODS:
   - FlutterMacOS (1.0.0)
+  - ObjectBox (1.8.1-sync)
+  - objectbox_sync_flutter_libs (0.0.1):
+    - FlutterMacOS
+    - ObjectBox (= 1.8.1-sync)
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
@@ -11,13 +15,20 @@ PODS:
 
 DEPENDENCIES:
   - FlutterMacOS (from `Flutter/ephemeral`)
+  - objectbox_sync_flutter_libs (from `Flutter/ephemeral/.symlinks/plugins/objectbox_sync_flutter_libs/macos`)
   - path_provider_foundation (from `Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin`)
   - rive_common (from `Flutter/ephemeral/.symlinks/plugins/rive_common/macos`)
   - shared_preferences_foundation (from `Flutter/ephemeral/.symlinks/plugins/shared_preferences_foundation/darwin`)
 
+SPEC REPOS:
+  trunk:
+    - ObjectBox
+
 EXTERNAL SOURCES:
   FlutterMacOS:
     :path: Flutter/ephemeral
+  objectbox_sync_flutter_libs:
+    :path: Flutter/ephemeral/.symlinks/plugins/objectbox_sync_flutter_libs/macos
   path_provider_foundation:
     :path: Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin
   rive_common:
@@ -27,6 +38,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+  ObjectBox: 6669c66d61ce50ab6c8a10efd6301f28d390ba77
+  objectbox_sync_flutter_libs: faa00060f3564fbe99a460c1b0f75493281fd825
   path_provider_foundation: c68054786f1b4f3343858c1e1d0caaded73f0be9
   rive_common: e966d74ca90edb3761cfc559d0f4c884ee947576
   shared_preferences_foundation: 986fc17f3d3251412d18b0265f9c64113a8c2472

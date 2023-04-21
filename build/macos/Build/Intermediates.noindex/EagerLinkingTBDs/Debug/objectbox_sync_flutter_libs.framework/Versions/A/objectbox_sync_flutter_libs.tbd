@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-macos ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@rpath/objectbox_sync_flutter_libs.framework/Versions/A/objectbox_sync_flutter_libs'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-macos ]
+    symbols:         [ '_$s27objectbox_sync_flutter_libs30ObjectboxSyncFlutterLibsPluginC6handle_6resultySo0G10MethodCallC_yypSgctF', 
+                       '_$s27objectbox_sync_flutter_libs30ObjectboxSyncFlutterLibsPluginC6handle_6resultySo0G10MethodCallC_yypSgctFTq', 
+                       '_$s27objectbox_sync_flutter_libs30ObjectboxSyncFlutterLibsPluginC8register4withySo0gI9Registrar_p_tFZ', 
+                       '_$s27objectbox_sync_flutter_libs30ObjectboxSyncFlutterLibsPluginCACycfC', 
+                       '_$s27objectbox_sync_flutter_libs30ObjectboxSyncFlutterLibsPluginCACycfc', 
+                       '_$s27objectbox_sync_flutter_libs30ObjectboxSyncFlutterLibsPluginCMa', 
+                       '_$s27objectbox_sync_flutter_libs30ObjectboxSyncFlutterLibsPluginCMn', 
+                       '_$s27objectbox_sync_flutter_libs30ObjectboxSyncFlutterLibsPluginCN', 
+                       '_$s27objectbox_sync_flutter_libs30ObjectboxSyncFlutterLibsPluginCfD', 
+                       _objectbox_sync_flutter_libsVersionNumber, _objectbox_sync_flutter_libsVersionString ]
+    objc-classes:    [ PodsDummy_objectbox_sync_flutter_libs, _TtC27objectbox_sync_flutter_libs30ObjectboxSyncFlutterLibsPlugin ]
+...

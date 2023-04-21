@@ -72,6 +72,7 @@ class _RegisterState extends State<Register> {
                 label: 'Create Account',
                 onPressed: () async {
                   var data = RegisterModel(
+                    id: 0,
                     username: userNameController.text,
                     email: emailController.text,
                     password: passwordController.text,

@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "3965c7bdafbd10b7335c0c6b61c9e51cc4cce8e344323923e6f2b940a910f57b"
+build_start_time: [1682086628, 231829000]
+build_end_time: [1682086629, 816387000]
+inputs:
+  ? "/Users/sittlynnaung/.pub-cache/hosted/pub.dev/objectbox_sync_flutter_libs-2.0.0/macos/Classes/ObjectboxSyncFlutterLibsPlugin.swift"
+  : [1682085487, 952974393]

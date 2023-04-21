@@ -2,24 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hero_to_zero/app.dart';
 import 'package:hero_to_zero/home.dart';
+import 'package:hero_to_zero/objectbox.g.dart';
 import 'package:hero_to_zero/shared/utils.dart';
 import 'package:hero_to_zero/src/auth/presentation/login.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:hero_to_zero/src/auth/service/store_register_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+late ObjectBox _objectBox;
+
+late Store _store;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final document = await getApplicationDocumentsDirectory();
-
-  // await Hive.initFlutter(document.path);
-  // Hive.registerAdapter(RegisterAdaptor());
-  // if (Hive.isBoxOpen(DBNames.authDb)) {
-  //   print('not open');
-  //   Hive.box<RegisterModel>(DBNames.authDb).close();
-  // } else {
-  //   print('open');
-  // }
-  // await Hive.openBox<RegisterModel>(DBNames.authDb);
+  // final document = await getApplicationDocumentsDirectory();
+  _store = Store(getObjectBoxModel());
+  await openStore();
+  _objectBox = await ObjectBox.init();
 
   final container = ProviderContainer();
   container.read(lightProvider);
