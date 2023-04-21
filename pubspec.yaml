@@ -41,8 +41,7 @@ dependencies:
   rive: ^0.10.3
   flutter_animate: ^4.1.1+1
   flutter_svg: ^2.0.4
-  hive: ^2.2.3
-  hive_flutter: ^1.1.0
+  objectbox: ^2.0.0
   path_provider: ^2.0.14
 
 dev_dependencies:

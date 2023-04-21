@@ -38,12 +38,6 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "crypto",
-      "rootUri": "file:///Users/sittlynnaung/.pub-cache/hosted/pub.dev/crypto-3.0.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
       "name": "cupertino_icons",
       "rootUri": "file:///Users/sittlynnaung/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.5",
       "packageUri": "lib/",
@@ -64,6 +58,12 @@
     {
       "name": "file",
       "rootUri": "file:///Users/sittlynnaung/.pub-cache/hosted/pub.dev/file-6.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flat_buffers",
+      "rootUri": "file:///Users/sittlynnaung/.pub-cache/hosted/pub.dev/flat_buffers-2.0.5",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -122,18 +122,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "hive",
-      "rootUri": "file:///Users/sittlynnaung/.pub-cache/hosted/pub.dev/hive-2.2.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "hive_flutter",
-      "rootUri": "file:///Users/sittlynnaung/.pub-cache/hosted/pub.dev/hive_flutter-1.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "http",
       "rootUri": "file:///Users/sittlynnaung/.pub-cache/hosted/pub.dev/http-0.13.5",
       "packageUri": "lib/",
@@ -180,6 +168,12 @@
       "rootUri": "file:///Users/sittlynnaung/.pub-cache/hosted/pub.dev/meta-1.9.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "objectbox",
+      "rootUri": "file:///Users/sittlynnaung/.pub-cache/hosted/pub.dev/objectbox-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
     },
     {
       "name": "path",
@@ -416,7 +410,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-04-20T17:05:44.799550Z",
+  "generated": "2023-04-21T12:42:06.020794Z",
   "generator": "pub",
   "generatorVersion": "3.0.0-409.0.dev"
 }

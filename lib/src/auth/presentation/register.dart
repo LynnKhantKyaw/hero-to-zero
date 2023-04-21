@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:hero_to_zero/db/db_names.dart';
 import 'package:hero_to_zero/shared/reusable/custom_raised_button.dart';
 import 'package:hero_to_zero/shared/reusable/custom_text_button.dart';
 import 'package:hero_to_zero/shared/reusable/custom_text_field.dart';
 import 'package:hero_to_zero/shared/utils.dart';
 import 'package:hero_to_zero/src/auth/model/register/register_model.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -16,8 +14,6 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
-  var authDb = Hive.box<RegisterModel>(DBNames.authDb);
-
   final userNameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
@@ -25,11 +21,6 @@ class _RegisterState extends State<Register> {
 
   @override
   void initState() {
-    if (!Hive.isBoxOpen(DBNames.authDb)) {
-      Hive.box<RegisterModel>(DBNames.authDb);
-    } else {
-      print('open');
-    }
     super.initState();
   }
 
@@ -86,8 +77,7 @@ class _RegisterState extends State<Register> {
                     password: passwordController.text,
                     confirmpassword: confirmPasswordController.text,
                   );
-                  authDb.put(DBKeys.registerKey, data);
-                  // authDb.add(data);
+
                   setState(() {});
                 },
               ),
